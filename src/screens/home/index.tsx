@@ -1,12 +1,13 @@
 import React from 'react';
 import { styles } from'./styles';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
+
+import logo from '../../assets/logo.png';
 
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}> Nome do Evento </Text>
-      <Text style={styles.eventDate}> Data do Evento </Text>
+     <Image source={logo} />
     </View>
   );
 }
